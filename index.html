@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Khushboo Kumari</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <div class="container">
+            <div class="navbar">
+                
+                <div class="logo-container">
+                    <img src="kk.jpg"class="logo">
+                    <div class="logo-text">hushboo Kumari</div>
+                </div>
+                
+                <div class="nav-items">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+
+            </div>
+
+            <div class="hero-section">
+
+                <div class="faded-text">"Turning ideas into functional code, one line at a time"</div>
+    
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Hi! Khushboo Kumari</div>
+                    
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+    
+                    <div class="hero-section-description">
+                        I’m a software developer and here is my portfolio website. Here you’ll
+                        learn about my journey as a software developer.
+                    </div>
+                    
+                    <div class="btn-pink" id="btn">Hire me</div>
+    
+                </div>
+    
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./images/userAsset/dots.png" alt="" />
+                      </div>
+                      <div class="absolute icons icon-cube">
+                        <img src="./images/userAsset/cube.png" alt="" />
+                      </div>
+                      <div class="absolute icons icon-circle">
+                        <img src="./images/userAsset/circle.png" alt="" />
+                      </div>
+                      <div class="absolute icons icon-zigzag">
+                        <img src="./images/userAsset/zigzags.png" alt="" />
+                      </div>
+                      <div class="absolute icons icon-plus">
+                        <img src="./images/userAsset/plus.png" alt="" />
+                      </div>
+                      <div class="user-image">
+                        <img src="Khushboo_Img.png" alt="" />
+                      </div>
+                </div>
+    
+            </div>
+        </div>
+
+        
+        
+        <div id="about" class="container skills-container ">
+          <div class="skill-fade-text">Skills</div>
+
+          <div class="skill-container-left">
+            <h2 class="skill-heading">
+              <span class="caps">M</span>e and
+              <br />
+              MyTech Stack
+            </h2>
+
+            <div class="skill-subHeading">
+              <h3>My name is Khushboo Kumari, </h3>
+              <p>I am a Web Developer. I have completed my Master’s in Computer Applications (MCA) and earned certifications in Node.js 
+              and React.js (Infosys), Google Analytics, Autometa, Data Analytics, RPA Developer Foundation, Python Programming (HackerRank), 
+              and Problem Solving. I am passionate about building efficient, scalable solutions and continuously expanding my knowledge in web development, data analytics, 
+              and automation. Looking forward to connecting and collaborating!................
+                
+              </p>
+              <p>
+                I have good knowladge of Python Programming, HTML, CSS, JaveScript, SQL,
+                DBMS, Data Analytics, Python DSA, Python Library like Pandas, 
+                Matploylib, Skitlearn, Seaborn ...
+              
+                
+                
+              </p>
+              <p>
+                Good knowladge of Ms Office PowerBI, Tabeau amd Good Understanding 
+                of software Testing(Automation,Mannual) Selenuim, Postmam, RestAPI.
+                
+              </p>
+            </div>
+          </div>
+
+          
+
+        <div class="contactus-form-container" id="contactme">
+          <div class="container">
+
+            <h1 class="contactus-heading">Contact me</h1>
+
+            <h3 class="contactus-sub-heading">
+              Questions, thoughts, or just want to say hello?
+            </h3>
+
+
+            <div class="contactus-form-container">
+              <form class="form" action="">
+                <div class="formfield-container">
+                  <input class="formfield" 
+                  type="text" 
+                  name="name" 
+                  id="" 
+                  placeholder="Enter your name" />
+
+                  <input class="formfield" 
+                  type="email" 
+                  name="email" 
+                  id="" 
+                  placeholder="Enter your email address" />
+
+                  <input class="formfield" 
+                  type="text" 
+                  name="subject" 
+                  id="" 
+                  placeholder="Enter your subject" />
+
+                  <textarea name="message" 
+                  id="" cols="30" rows="10" 
+                  class="formfield formfield-textarea"
+                  placeholder="Enter your message"></textarea>
+
+                </div>
+                
+                <div>
+                  <button type="submit" class="btn-pink" id="submit-btn">
+                    Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+
+
+          </div>
+        </div>
+      
+
+        <div class="chatbot-container">
+          <div class="chatbot-toggle" onclick="toggleChat()">💬</div>
+          <div class="chatbot">
+            <div class="chat-header">
+              <span>Chatbot</span>
+              <button onclick="toggleChat()">✖</button>
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-footer">
+              <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask me something..."
+                onkeypress="handleKeyPress(event)"
+              />
+              <button onclick="sendMessage()">Send</button>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        <footer>
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="footer-faded-text">Khushboo Kumari</div>
+
+              <div class="link-wrapper">
+                <div>
+                  <a href="#projects">Projects</a>
+                </div>
+                <div>
+                  <a href="#about">About</a>
+                </div>
+                <div>
+                  <a href="#contactme">Contact Me</a>
+                </div>
+              </div>
+
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-linkedin icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-instagram icon"></i>
+                <i class="fa-regular fa-envelope icon"></i>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Web Developer",
+        "Python Developer",
+        "Data Analyst",
+        "UI-UX Designer",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</body>
+<script>
+  function toggleChat() {
+    const chat = document.querySelector(".chatbot");
+    chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+  }
+
+  function sendMessage() {
+    let input = document.getElementById("chatInput");
+    let chatBody = document.getElementById("chatBody");
+    let userMessage = input.value.trim();
+
+    if (userMessage !== "") {
+      // Display user message
+      let userMsgElement = document.createElement("p");
+      userMsgElement.textContent = userMessage;
+      userMsgElement.classList.add("user-message");
+      chatBody.appendChild(userMsgElement);
+
+      // Get bot response
+      let botResponse = getBotResponse(userMessage);
+
+      // Display bot message after delay
+      setTimeout(() => {
+        let botMsgElement = document.createElement("p");
+        botMsgElement.textContent = botResponse;
+        botMsgElement.classList.add("bot-message");
+        chatBody.appendChild(botMsgElement);
+        chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll
+      }, 500);
+
+      // Clear input
+      input.value = "";
+    }
+  }
+
+  function getBotResponse(message) {
+    let msg = message.toLowerCase();
+
+    if (msg.includes("hello") || msg.includes("hi")) {
+      return "Hello! How can I help you?";
+    } else if (msg.includes("how are you")) {
+      return "I'm just a bot, but I'm doing great! 😊";
+    } else if (msg.includes("time")) {
+      //return The current time is ${new Date().toLocaleTimeString()};
+      return `The current time is ${new Date().toLocaleTimeString()}`;
+
+    } else if (msg.includes("your name")) {
+      return "I'm a simple chatbot!";
+    } else {
+      return "I'm not sure how to respond to that. Try asking something else!";
+    }
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      sendMessage();
+    }
+  }
+</script>
+</html>
